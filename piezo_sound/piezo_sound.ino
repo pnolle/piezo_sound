@@ -23,17 +23,56 @@ void loop() {
   */
 
 
-  ledcWriteNote(soundpin,NOTE_C, 3);
+
+
+  ledcWriteNote(soundpin,NOTE_E, 4);
+  delay(100);
+  ledcWrite(soundpin,0);
+  delay(100);
+  
+  ledcWriteNote(soundpin,NOTE_E, 4);
+  delay(100);
+  ledcWrite(soundpin,0);
+  delay(100);
+  
+  ledcWriteNote(soundpin,NOTE_E, 4);
   delay(400);
   ledcWrite(soundpin,0);
 
-  ledcWriteNote(soundpin,NOTE_D, 3);
-  delay(400);
+  
+
+  ledcWriteNote(soundpin,NOTE_A, 3);
+  delay(390);
+  ledcWrite(soundpin,0);
+  delay(10);
+
+  ledcWriteNote(soundpin,NOTE_A, 3);
+  delay(390);
+  ledcWrite(soundpin,0);
+  delay(10);
+  
+
+  
+  ledcWriteNote(soundpin,NOTE_D, 4);
+  delay(590);
+  ledcWrite(soundpin,0);
+  delay(10);
+  
+  ledcWriteNote(soundpin,NOTE_D, 4);
+  delay(190);
+  ledcWrite(soundpin,0);
+  delay(10);
+
+
+  
+  ledcWriteNote(soundpin,NOTE_C, 4);
+  delay(1000);
   ledcWrite(soundpin,0);
 
-  ledcWriteNote(soundpin,NOTE_E, 3);
-  delay(400);
-  ledcWrite(soundpin,0);
+
+
+
+  /*
   
   ledcWriteNote(soundpin,NOTE_F, 3);
   delay(400);
@@ -54,10 +93,13 @@ void loop() {
   ledcWriteNote(soundpin,NOTE_C, 4);
   delay(1000);
   ledcWrite(soundpin,0);
+
+  
+
+  */
+  
   
   delay(1000);
-  
-  
   
   ledcDetach(soundpin);  
   Serial.println("Buzzer Stop");
